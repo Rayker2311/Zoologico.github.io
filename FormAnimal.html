@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <link rel="icon" type="image/jpg" href="Logotipo.jpg">
+	<title>Gestión de Animales</title>
+	<link rel="stylesheet" type="text/css" href="css/EstilAnimal.css">
+	<script src="https://kit.fontawesome.com/7d29953f1d.js" crossorigin="anonymous"></script>
+    <script src="JavaScript/validar.js"></script>
+</head>
+<body>
+	<header>
+		<div class="imag">
+			<i class="icono fas fa-frog"></i>
+		</div>
+        <div class="title">
+		<h1>Gestión de Animales</h1>
+        </div>
+		<div class="imag">
+			<i class="icono fas fa-crow"></i>
+		</div>
+	</header>
+	<nav class="navegation">
+		<button onclick="validar1()">Gestión de Alimentos</button>
+		<button onclick="validar1()">Gestión de Consultas</button>
+		<button onclick="validar1()">Gestión de Personal Médico</button>
+		<button onclick="validar1()">Gestión de Hábitats</button>
+		<a href="index.html">Página principal</a>
+    </nav>
+    <div class="contenedor">
+    <section class="seccion">
+    	<h2>Datos de los Animales</h2>
+    	<form class="seccion1" onsubmit="return validar();">
+    		<div class="segmento1">
+    		    <label for="numero" name="Codigo">Código del Animal:</label>
+    		    <input type="number" name="Codigo" id="numero" required>
+    		    <label for="Sex" name="Genero">Sexo del Animal:</label>
+    		    <select name="Genero" id="Sex" required>
+                    <option value="...">...</option>
+                    <option value="Macho">Macho</option>
+                    <option value="Hembra">Hembra</option>
+                    <option value="Hermafrodito">Hermafrodito</option>      
+                </select>
+    		    <label for="Altura" name="Tamaño">Tamaño del Animal:</label>
+    		    <input type="text" name="Tamaño" id="Altura" required>
+    		</div>
+    		<div class="segmento2">
+    		    <label for="Edad" name="Años">Edad del Animal:</label>
+    		    <input type="text" name="Años" id="Edad" required>
+    		    <label for="Peso" name="Masa">Peso del Animal:</label>
+    		    <input type="text" name="Masa" id="Peso" required>
+    		    <label for="Especie" name="Identidad">Especie del Animal:</label>
+    		    <input type="text" name="Identidad" id="Especie" required>
+    		</div>
+            <div class="botones">
+                <input type="submit" value="Registrar" class="boton">
+                <input type="submit" value="Actualizar" class="boton">
+                <input type="submit" value="Consultar" class="boton">
+                <input type="submit" value="Eliminar" class="boton">  
+            </div>
+    	</form>
+    </section>
+    </div>
+    <footer>
+    	<p>Créditos a la Universidad Politécnica Territorial Andrés Eloy Blanco (UPTAEB) - Derechos Reservados</p>
+    	<p>Dirigido a la Institución del Parque Zoológico y Botánico Bararida.</p>
+    </footer>
+</body>
+</html>

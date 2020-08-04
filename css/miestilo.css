@@ -1,0 +1,340 @@
+*{
+	box-sizing:border-box;
+ 	margin:0px;
+ 	padding:0px;
+ 	zoom:100%;
+}
+
+body{
+	background:#D4DFD2;
+	width:960px;
+	margin:auto;
+}
+
+.Presentacion{
+	background:url(../imagenes/ImagPresentacion.jpg);
+	width:960px;
+	height:250px; 
+}
+
+h1{
+	display:flex;
+	justify-content:center;
+	padding:10px;
+	background:url(../imagenes/Fondo2.jpg);	
+	color:#fff;
+	font-family:arial black;
+}
+
+ul{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+	background:#FF2E00;
+}
+
+li{
+	list-style:none;
+	display:flex;
+}
+
+li:hover{
+	background:#CA00FF;
+	border-bottom:3px solid #fff;
+}
+
+li:focus{
+	background:#7C11AF;
+	border-bottom:3px solid #0BFCEC;
+}
+
+.link{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-decoration:none;
+    width:240px;
+    height:40px;
+	color:#fff;
+	font-weight:bold;
+}
+
+.contenedorpadre{
+	display:flex;
+}
+
+section{
+	background:url(../imagenes/Fondo1.jpg);
+	width:850px;
+	height:400px;
+    overflow:auto;
+}
+
+h2{
+	text-align:center;
+	font-family:cooper black;
+	color:#70067D;
+	text-shadow:2px 2px 2px #fff;
+}
+
+article{
+	background-color:rgba(229,240,240,0.5);
+	padding:30px;
+	border-radius:20px;
+	color:#000;
+	margin:30px;
+	font-weight:bold;
+	text-align:justify;
+}
+
+.diferente{
+    color:red;
+}
+
+.Galeria1{
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+}
+
+img{
+	width:350px;
+    height:200px;
+    border-radius:5px;
+    border:3px solid #000;
+}
+
+h3{
+	text-align: center;
+	color:#041DF9;
+	text-shadow:2px 2px 2px #FF06DD;
+	font-family:arial black;
+}
+
+.Galeria2{
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	margin-bottom:20px;
+}
+
+aside{
+	background:url(../imagenes/Piel1.jpg);
+	width:110px;
+	height:400px;
+}
+
+button{
+	background:yellow;
+	border-radius:20px;
+    width:90px;
+	height:90px;
+	padding:5px;
+	margin:5px 10px;
+}
+
+button:hover{
+	background:#E1CD07;
+	border:3px solid #000; 
+}
+
+button:focus{
+	background:#FF8F00;
+	border:0px;
+}
+
+.icono{
+	font-size:60px;
+}
+
+.tooltip-box{
+    display:none;
+	position:absolute;
+	background:#000;
+	color:#fff;
+	line-height:20px;
+	z-index:500;
+	text-align:center;
+	font-weight:bold;
+	font-size:14px;
+	padding:5px 10px;
+	border-radius:10px;
+	margin-top:35px;
+}
+
+.tooltip:hover .tooltip-box{
+    display:inline-block;
+}
+
+.tooltip-box::after{
+    content:"";
+    display:block;
+    border-top:7px solid transparent;
+    border-bottom:7px solid transparent;
+    border-right:7px solid #000;
+    position:absolute;
+    left:-7px;
+    top:calc(50% - 7px);
+}
+
+footer{
+	background:#000;
+	height:50px;
+	color:yellow;
+	text-align:center;
+	padding-top:5px;
+}
+
+@media (max-width:750px){	
+
+	body{
+	    background:#D4DFD2;
+	    width:750px;
+	    margin:auto;
+	}
+
+	.Presentacion{
+		width:750px;
+		background-size:100%;
+	}
+
+	h1{
+	    display:flex;
+	    text-align:center;
+	    padding:10px;
+	}
+
+	.link{
+		width:250px;
+	}
+
+	.Elemento4{
+		display:flex;
+		justify-content:center;
+	}
+
+	img{
+		width:450px;
+	}
+
+	.Galeria2{
+	    margin-bottom:0px;
+    }
+
+	.caja1{
+		margin-bottom:20px;
+	}
+}
+
+@media (max-width:600px){	
+
+	body{
+	    background:#D4DFD2;
+	    width:600px;
+	    margin:auto;
+	}
+
+	.Presentacion{
+		width:600px;
+		height: 200px;
+		background-size:100%;
+	}
+
+	h1{
+	    display:flex;
+	    text-align:center;
+	    padding:10px;
+	}
+
+	ul{
+		display:flex;
+		justify-content:space-between;
+	}
+
+	.link{
+		width:300px;
+	}
+    
+    img{
+		width:300px;
+	}
+
+	.Galeria2{
+	    margin-bottom:0px;
+    }
+    
+    .caja1{
+		margin-bottom:20px;
+	}
+}
+
+@media (max-width:450px){	
+
+	body{
+	    background:#D4DFD2;
+	    width:450px;
+	    margin:auto;
+	}
+
+	.Presentacion{
+		width:450px;
+		height:150px;
+		background-size:100%;
+	}
+
+	h1{
+	    display:flex;
+	    text-align:center;
+	    padding:10px;
+	}
+
+	ul{
+		display:flex;
+		justify-content:center;
+	}
+
+	.link{
+		display:flex;
+		flex-direction:column;
+		width:500px;
+	}
+
+	.contenedorpadre{
+		display:flex;
+		flex-direction:column;
+	}
+	
+	section{
+        width:450px;
+        height:400px;
+	}
+
+	aside{
+		display:flex;
+		flex-flow:row wrap;
+		width:450px;
+	    height:110px;
+	}
+
+	button{
+		margin-top:10px;
+	}
+
+    .tooltip-box{
+	    width:90px;
+	    margin-top:110px;
+	    margin-left:-100px;
+    }
+
+    .tooltip-box::after{
+        content:"";
+        display:block;
+        border-left:7px solid transparent;
+        border-right:7px solid transparent;
+        border-bottom:7px solid #000;
+        position:absolute;
+        top:-14px;
+        left:calc(50% - 7px);  
+    }
+
+}
